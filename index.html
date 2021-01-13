@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <style type="text/css">
+	    * {
+		    margin: 0;
+		    padding:0;
+		}
+		/*Imagem de Fundo*/
+		#img{
+	      	background: url('img2.png') no-repeat bottom center scroll;
+	      	text-align: center;
+	      	display: block;
+			width: 100%;
+			height: 100vh;
+			padding: 100px 0;
+			color: white;
+			background-position: 30% 45% 30% 50%;
+			background-size: cover;
+	    }
+	    h1{
+	    	padding-bottom: 11rem;
+	    	color: black;
+	    }
+	    /*Tamanho da Range*/
+      .rangeSize{
+        height: 4rem !important;
+        width: 110% !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 5rem;
+        outline: none;
+        position: relative;
+      }
+      /*Tamanho da Coluna 2-2 do GRID*/
+      .colSize{
+        height: 20rem !important;
+        padding-top: 5rem;
+      }
+      /*estilo do range*/
+      input[type='range'] {
+        cursor: pointer;
+      }
+
+      input[type='range'],
+      input[type='range']::-webkit-slider-runnable-track,
+      input[type='range']::-webkit-slider-thumb {
+        -webkit-appearance: none;
+      }
+
+      /** 
+       * Use o pseudo-seletor "::-webkit-slider-runnable-track" para customizar o "trilho" do campo.
+       */
+      input[type='range']::-webkit-slider-runnable-track {
+        height: 2rem;
+        background: #1a86c8;
+        border-radius: 3rem;
+      }
+      .imgEmoji{
+	      	border-radius: 300px !important;
+	      }
+
+      /** 
+       * Use o pseudo-seletor "::-webkit-slider-thumb" para customizar o "seletor" do campo.
+       */
+      input[type='range']::-webkit-slider-thumb {
+        width: 5rem;
+        height: 8rem;
+        margin-top: -50px;
+        background-color: blue;
+        background: url("MeuBebe.jpg") no-repeat center !important;
+        border-radius: 4rem;
+      }
+      @media screen and (max-width: 1024px) {
+      		h1{
+		    	padding-bottom: 7rem;
+		    	color: black;
+		    }
+      	  #img{
+	      	background: url('img2.png') no-repeat bottom center scroll;
+	      	text-align: center;
+	      	display: block;
+			width: 100%;
+			height: 200vh;
+			padding: 100px 0;
+			color: white;
+			background-position: 30% 45% 30% 50%;
+			background-size: cover;
+			position: fixed;
+	      }
+      	  .colSize{
+	        height: 20rem !important;
+	        padding-top: 2rem;
+	      }
+      	  .rangeSize{
+	        height: 2rem !important;
+	        width: 111% !important;
+	        padding-left: 10px;
+	        padding-right: 10px;
+	        border-radius: 5rem;
+	        outline: none;
+	        position: relative;
+	      }
+	      /** 
+	       * Use o pseudo-seletor "::-webkit-slider-runnable-track" para customizar o "trilho" do campo.
+	       */
+      	  input[type='range']::-webkit-slider-runnable-track {
+	        height: 1rem;
+	        background: #1a86c8;
+	        border-radius: 3rem;
+	      }
+	      /** 
+	       * Use o pseudo-seletor "::-webkit-slider-thumb" para customizar o "seletor" do campo.
+	       */
+		   input[type='range']::-webkit-slider-thumb {
+	        width: 2.5rem;
+	        height: 3.5rem;
+	        margin-top: -19px;
+	        background-color: blue;
+	        background: url("MeuBebe2.jpg") no-repeat center !important;
+	        border-radius: 4rem;
+	      }
+		 .imgEmoji{
+	      	border-radius: 300px !important;
+	      	padding: 1px 1px 1px 1px !important;
+	      }
+	      .colPad{
+	      	padding-left: 30px;
+	      }
+	      .calPad2{
+	      	padding-right: 30px;
+	      }
+	  }
+    </style>
+
+    <title>Laís</title>
+  </head>
+  <body>
+  	<div id="img">
+  		<!--PAGINA-->
+        <div class="container">
+        <!--TITULO-->
+          <div class="row align-items-start">
+            <div class="col">
+              <label for="customRange1" class="form-label"><h1>HUMOR</h1></label>
+            </div>
+          </div>
+          <!--Emojis-->
+		  <div class="row">
+		    <div class="col colPad">
+		    	<div>
+		    		<img src="emoji1.png" class="img-fluid img-thumbnail imgEmoji">
+		    	</div>
+		    </div>
+		    <div class="col">
+		    	<div>
+		    		<img src="emoji2.png" class="img-fluid img-thumbnail imgEmoji">
+		    	</div>
+		    </div>
+		    <div class="col">
+		      <div>
+		    		<img src="emoji3.png" class="img-fluid img-thumbnail imgEmoji">
+		    	</div>
+		    </div>
+		    <div class="col">
+		      <div>
+		    		<img src="emoji4.png" class="img-fluid img-thumbnail imgEmoji">
+		    	</div>
+		    </div>
+		    <div class="col">
+		      <div>
+		    		<img src="emoji5.png" class="img-fluid img-thumbnail imgEmoji">
+		    	</div>
+		    </div>
+		    <div class="col">
+		      <div>
+		    		<img src="emoji6.png" class="img-fluid img-thumbnail imgEmoji">
+		    	</div>
+		    </div>
+		    <div class="col">
+		      <div>
+		    		<img src="emoji7.png" class="img-fluid img-thumbnail imgEmoji">
+		    	</div>
+		    </div>
+		    <div class="col">
+		      <div>
+		    		<img src="emoji8.png" class="img-fluid img-thumbnail imgEmoji">
+		    	</div>
+		    </div>
+		    <div class="col">
+		      <div>
+		    		<img src="emoji9.png" class="img-fluid img-thumbnail imgEmoji">
+		    	</div>
+		    </div>
+		    <div class="col calPad2">
+		      <div>
+		    		<img src="emoji10.png" class="img-fluid img-thumbnail imgEmoji">
+		    	</div>
+		    </div>
+		  </div>
+          <!--RANGE-->
+          <div class="rowSize row">         		
+            <div class="col-11 colSize">
+				<input type="range" class="rangeSize" id="valor" min="1" max="10" value="1">
+				<div id="resultado1"> 
+					resultado
+				</div>
+            </div>
+          </div>
+        </div>
+  	</div>
+  		<script type="text/javascript">
+  			/*var inputvar = document.getElementById("valor"),
+				number_mqs = document.getElementById("resultado1");
+				inputvar.addEventListener("input", function() {
+				number_mqs.innerHTML = inputvar.value;
+				}, false);*/
+
+				var valor = parseInt(document.querySelector('.valor').value);
+				document.write(valor);
+		</script>
+		<?php
+			  $valor = "<script>valor</script>"
+			  
+			  	//Inforamcoes do banco de dados
+				$servername = "localhost";
+				$username = "root";
+				$password = "";
+				$db_name = "julia_login";
+
+				//Conectar ao banco de dados
+				$conexao = mysqli_connect($servername, $username, $password, $db_name) or die(mysqli_error($conexao));
+				//consultar se o numero cadastrado esta correto
+				$query = "SELECT id_usuario from usuarios where nome = '{$usuario}' or email = '{$email}'";
+				$result = mysqli_query($conexao, $query);
+				$row = mysqli_num_rows($result);
+
+				if($row == 1){
+					$insert1 = "INSERT INTO usuarios (nome, email, senha) VALUES('$usuario','$email',md5('$senha'))";
+					$insert2 = mysqli_query($conexao, $query);
+
+					if(insert2 = 1){
+						header('Location: index.php');
+					}
+				}
+		?>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
