@@ -75,7 +75,6 @@
         height: 8rem;
         margin-top: -50px;
         background-color: blue;
-        background: url("MeuBebe.jpg") no-repeat center !important;
         border-radius: 4rem;
       }
       @media screen and (max-width: 1024px) {
@@ -140,7 +139,7 @@
 	  }
     </style>
 
-    <title>Laís</title>
+    <title>HUMOR</title>
   </head>
   <body>
   	<div id="img">
@@ -226,32 +225,6 @@
 				var valor = parseInt(document.querySelector('.valor').value);
 				document.write(valor);
 		</script>
-		<?php
-			  $valor = "<script>valor</script>"
-			  
-			  	//Inforamcoes do banco de dados
-				$servername = "localhost";
-				$username = "root";
-				$password = "";
-				$db_name = "julia_login";
-
-				//Conectar ao banco de dados
-				$conexao = mysqli_connect($servername, $username, $password, $db_name) or die(mysqli_error($conexao));
-				//consultar se o numero cadastrado esta correto
-				$query = "SELECT id_usuario from usuarios where nome = '{$usuario}' or email = '{$email}'";
-				$result = mysqli_query($conexao, $query);
-				$row = mysqli_num_rows($result);
-
-				if($row == 1){
-					$insert1 = "INSERT INTO usuarios (nome, email, senha) VALUES('$usuario','$email',md5('$senha'))";
-					$insert2 = mysqli_query($conexao, $query);
-
-					if(insert2 = 1){
-						header('Location: index.php');
-					}
-				}
-		?>
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
